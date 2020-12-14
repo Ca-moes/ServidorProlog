@@ -1,3 +1,5 @@
+**UPDATE** : Problema depende do browser usado. Em Firefox funciona direito enquanto que em browsers baseados em *Chromium* e.g. Chrome, Brave, Edge, acontece o descrito abaixo.
+
 # ServidorProlog
 
 Alguns pedidos demoram 20 ms enquanto outros demoram 300ms. Isto porque o programa em prolog, quando fica bloqueado à espera de resposta não fica sempre no mesmo predicado. Quando fica bloqueado no predicado `socket_server_open`, o pedido seguinte demora 300ms a ser processado. Quando fica bloqueado em `read_line` só demora 20ms.
